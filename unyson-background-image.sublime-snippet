@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'background-image',
+    'value' => '${2:choice_id-1}',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'choices' => array(
+        ${7:'choice_id-1' => array(
+            'icon' => get_template_directory_uri() . '/images/bg/bg-0.jpg',
+            'css'  => array(
+                /*
+                'background-image' => 'none'
+                */
+            ),
+        ),
+        'choice_id-2' => array(
+            'icon'  => get_template_directory_uri() . '/images/bg/bg-1.jpg',
+            'css'  => array(
+                /*
+                'background-image'  => 'url("' . get_template_directory_uri() . '/images/bg-1.png' . '")',
+                'background-repeat' => 'repeat',
+                */
+            ),
+        ),}
+    )
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-background-image</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

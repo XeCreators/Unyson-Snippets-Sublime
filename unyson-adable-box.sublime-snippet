@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'addable-box',
+    'value' => array(
+        ${2:array(
+            'option_1' => 'value 1',
+            'option_2' => 'value 2',
+        ),
+        // ...}
+    ),
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'box-options' => array(
+        
+        ${7:// options here}
+
+    ),
+    'template' => '${8:Hello \{\{- option_1 \}\}}', // box title
+    'box-controls' => array( // buttons next to (x) remove box button
+        'control-id' => '${9:<small class="dashicons dashicons-smiley"></small>}',
+    ),
+    'limit' => ${10:0}, // limit the number of boxes that can be added
+    'add-button-text' => __('${11:Add}', 'fw'),
+    'sortable' => ${12:true},
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-adable-box</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

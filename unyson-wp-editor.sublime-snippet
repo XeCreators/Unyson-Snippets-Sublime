@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'wp-editor',
+    'value' => '${2:default value}',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    /**
+     * Load TinyMCE, can be used to pass settings directly to TinyMCE using an array
+     * bool|array
+     */
+    'tinymce' => ${7:true},
+    /**
+     * Whether to display media insert/upload buttons
+     * boolean
+     */
+    'media_buttons' => ${8:true},
+    /**
+     * Whether to output the minimal editor configuration used in PressThis
+     * boolean
+     */
+    'teeny' => ${9:false},
+    /**
+     * Whether to use wpautop for adding in paragraphs
+     * boolean
+     */
+    'wpautop' => ${10:true},
+    /**
+     * Additional CSS styling applied for both visual and HTML editors buttons, needs to include <style> tags, can use "scoped"
+     * string
+     */
+    'editor_css' => '$11',
+    /**
+     * If smething goes wrong try set to true
+     * boolean
+     */
+    'reinit' => ${12:false},
+    /**
+     * Set the editor size: small - small box, large - full size
+     * boolean
+     */
+    'size' => '${13:small}', // small | large
+    /**
+     * Set editor type : 'tinymce' or 'html'
+     */
+    'editor_type' => '${14:tinymce}',
+    /**
+     * Set the editor height, must be int
+     */
+    'editor_height' => ${15:400}
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-wp-editor</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

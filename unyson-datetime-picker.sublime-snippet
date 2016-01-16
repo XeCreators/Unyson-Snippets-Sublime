@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'datetime-picker',
+    'value' => '$2',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'datetime-picker' => array(
+        'format'        => '${7:Y/m/d H:i}', // Format datetime (Y/m/d H:i).
+        'maxDate'       => ${8:false},  // By default there is not maximum date , set a date in the datetime format.
+        'minDate'       => ${9:false},  // By default minimum date will be current day, set a date in the datetime format.
+        'timepicker'    => ${10:true},   // Show timepicker.
+        'datepicker'    => ${11:true},   // Show datepicker.
+        'defaultTime'   => '${12:12:00}' // If the input value is empty, timepicker will set time use defaultTime.
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-datetime-picker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

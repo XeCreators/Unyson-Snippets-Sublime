@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+'${1:tab_id}' => array(
+    'type' => 'tab',
+    'title' => __('${2:Tab Title}', 'fw'),
+    'attr' => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'options' => array(
+
+        ${4:// options here}
+
+    ), // options
+), // ${1:tab_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-tab</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

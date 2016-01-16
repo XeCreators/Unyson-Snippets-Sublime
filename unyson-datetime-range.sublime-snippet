@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'datetime-range',
+    'value' => array(
+        'from' => '$2',
+        'to' => '$3'
+    ),
+    'attr'  => array( ${4:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${5:Label}', 'fw'),
+    'desc'  => __('${6:Description}', 'fw'),
+    'help'  => __('${7:Help tip}', 'fw'),
+    'datetime-pickers' => array(
+    'from' => array(
+        'minDate' => '${8:1970/01/01}', // By default minimum date will be current day, set a date in the datetime format.
+        'maxDate' => '${9:2038/01/19}', // By default there is not maximum date , set a date in the datetime format.
+        'format'  => '${10:Y/m/d H:i}',  // Format datetime (Y/m/d H:i).
+        'timepicker'  => ${11:true},     // Show timepicker.
+        'datepicker'  => ${12:true},     // Show datepicker.
+        ),
+    'to' => array(
+        'minDate' => '${13:1970/01/01}', // By default minimum date will be current day, set a date in the datetime format.
+        'maxDate' => '${14:2038/01/19}', // By default there is not maximum date , set a date in the datetime format.
+        'format'  => '${15:Y/m/d H:i}',  // Format datetime (Y/m/d H:i).
+        'timepicker'  => ${16:true},     // Show timepicker.
+        'datepicker'  => ${17:true},     // Show datepicker.
+        )
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-datetime-range</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

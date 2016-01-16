@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+'${1:panel_id}' => array(
+    'title' => __('${2:Unyson Panel}', 'fw'),
+    'options' => array(
+
+    	${3:// sections here}
+
+    ), // options
+), // ${1:panel_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-panel-customizer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

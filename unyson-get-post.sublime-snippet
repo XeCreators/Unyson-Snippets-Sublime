@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$${1:value} = fw_get_db_post_option(${2:\$post_id}, ${3:\$option_id});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-get-post</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

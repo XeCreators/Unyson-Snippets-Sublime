@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+array( // optgroup
+    'attr'    => array('label' => __('${1:Group 1}', 'fw')),
+    'choices' => array(
+        ${2:'choice-3' => __('Choice 3', 'fw'),}
+    ),
+),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-optgroup</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'rgba-color-picker',
+    'value' => '${2:rgba(255,0,0,0.5)}',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'palettes' => array( ${4:'#ba4e4e', '#0ce9ed'} ), // palette colors array
+    'label' => __('${5:Label}', 'fw'),
+    'desc'  => __('${6:Description}', 'fw'),
+    'help'  => __('${7:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-rgba-color-picker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

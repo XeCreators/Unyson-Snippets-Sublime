@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type' => 'addable-popup',
+    'value' => array(
+        ${2:array(
+            'option_1' => 'value 1',
+            'option_2' => 'value 2',
+        ),
+        // ...}
+    ),
+    'label' => __('${3:Addable Popup}', 'fw'),
+    'desc'  => __('${4:Description}', 'fw'),
+    'template' => '${5:\{\{- demo_text \}\}}',
+    'popup-title' => ${6:null},
+    'size' => '${7:small}', // small, medium, large
+    'limit' => ${8:0}, // limit the number of popup`s that can be added
+    'add-button-text' => __('${9:Add}', 'fw'),
+    'sortable' => ${10:true},
+    'popup-options' => array(
+        
+        ${11:// option here}
+
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-adable-popup</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

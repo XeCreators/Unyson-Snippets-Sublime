@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+'${1:group_id}' => array(
+    'type' => 'group',
+    'attr' => array( ${2:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'options' => array(
+
+        ${3:// options here}
+        
+    ), // options
+), // ${1:group_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-group</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

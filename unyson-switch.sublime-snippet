@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'switch',
+    'value' => '${2:hello}',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'left-choice' => array(
+        'value' => '${7:goodbye}',
+        'label' => __('${8:Goodbye}', 'fw'),
+    ),
+    'right-choice' => array(
+        'value' => '${9:hello}',
+        'label' => __('${10:Hello}', 'fw'),
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-switch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

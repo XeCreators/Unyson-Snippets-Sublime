@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'multi',
+    'value' => array(
+        ${2:'option-1' => 'value 1',
+        'option-2' => 'value 2',}
+    ),
+    'attr'  => array(
+        ${3:'class' => 'custom-class',
+        'data-foo' => 'bar',}
+
+        /* Add this class to display inner options separators
+        'class' => 'fw-option-type-multi-show-borders', */
+    ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'inner-options' => array(
+        
+        ${7:// options here}
+
+    )
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-multi</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

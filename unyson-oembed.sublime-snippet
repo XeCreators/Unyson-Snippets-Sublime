@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'oembed'
+    'value' => '${2:https://vimeo.com/113078377}',
+    'label' => __('${3:Label}', 'fw'),
+    'desc'  => __('${4:Description}', 'fw'),
+    'help'  => __('${5:Help tip}', 'fw'),
+    'preview' => array(
+        'width'  => ${6:300}, // optional, if you want to set the fixed width to iframe
+        'height' => ${7:300}, // optional, if you want to set the fixed height to iframe
+        /**
+         * if is set to false it will force to fit the dimensions,
+         * because some widgets return iframe with aspect ratio and ignore applied dimensions
+         */
+        'keep_ratio' => ${8:true}
+    )
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-oembed</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

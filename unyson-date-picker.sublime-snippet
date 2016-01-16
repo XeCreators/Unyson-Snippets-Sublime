@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'date-picker',
+    'value' => '$2',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'monday-first' => ${7:true}, // The week will begin with Monday; for Sunday, set to false
+    'min-date' => date('${8:d-m-Y}'), // By default minimum date will be current day. Set a date in format d-m-Y as a start date
+    'max-date' => ${9:null}, // By default there is not maximum date. Set a date in format d-m-Y as a start date
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-date-picker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

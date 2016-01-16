@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'slider',
+    'value' => ${2:33},
+    'properties' => array(
+        ${3:/*
+        'min' => 0,
+        'max' => 100,
+        'step' => 1, // Set slider step. Always > 0. Could be fractional.
+        */}
+    ),
+    'attr'  => array( ${4:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${5:Label}', 'fw'),
+    'desc'  => __('${6:Description}', 'fw'),
+    'help'  => __('${7:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-slider</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

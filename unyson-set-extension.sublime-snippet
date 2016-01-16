@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+fw_set_db_extension_data(${1:\$extension_name}, ${2:\$key}, ${3:\$value})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-set-extension</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

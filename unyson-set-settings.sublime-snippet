@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+fw_set_db_settings_option(${1:\$option_id}, ${2:\$value})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-set-settings</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

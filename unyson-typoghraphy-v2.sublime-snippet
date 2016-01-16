@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type' => 'typography-v2',
+    'value' => array(
+        ${2:'family' => 'Amarante',
+        // For standard fonts, instead of subset and variation you should set 'style' and 'weight'.
+        // 'style' => 'italic',
+        // 'weight' => 700,
+        'subset' => 'latin-ext',
+        'variation' => 'regular',
+        'size' => 14,
+        'line-height' => 13,
+        'letter-spacing' => -2,
+        'color' => '#0000ff'}
+    ),
+    'components' => array(
+        'family'         => ${3:true},
+        // 'style', 'weight', 'subset', 'variation' will appear and disappear along with 'family'
+        'size'           => ${4:true},
+        'line-height'    => ${5:true},
+        'letter-spacing' => ${6:true},
+        'color'          => ${7:true}
+    ),
+    'attr'  => array( ${8:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${9:Label}', 'fw'),
+    'desc'  => __('${10:Description}', 'fw'),
+    'help'  => __('${11:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-typography-v2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

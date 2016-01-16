@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+'${1:box_id}' => array(
+    'type' => 'box',
+    'title' => __('${2:Box Title}', 'fw'),
+    'attr' => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'options' => array(
+
+        ${4:// options here}
+        
+    ), // options
+
+    /**
+     * When used in Post Options on the first array level
+     * the ``box`` container accepts additional parameters
+     */
+    ${5://'context' => 'normal|advanced|side',}
+    ${6://'priority' => 'default|high|core|low',}
+), // ${1:box_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-box</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

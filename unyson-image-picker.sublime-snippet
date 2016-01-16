@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'image-picker',
+    'value' => '${2:value-1}',
+    'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${4:Label}', 'fw'),
+    'desc'  => __('${5:Description}', 'fw'),
+    'help'  => __('${6:Help tip}', 'fw'),
+    'blank' => ${7:true}, // (optional) if true, images can be deselected
+    'choices' => array(
+        '${8:value-1' => get_template_directory_uri() .'/images/thumbnail.png',
+        'value-2' => array(
+	        // (required) url for thumbnail
+	        'small' => get_template_directory_uri() .'/images/thumbnail.png',
+	        // (optional) url for large image that will appear in tooltip
+	        'large' => get_template_directory_uri() .'/images/preview.png',
+	        // (optional) choice extra data for js, available in custom events
+	        'data' => array(...)
+	    ),
+	    'value-3' => array(
+	        // (required) url for thumbnail
+	        'small' => array(
+	            'src' => get_template_directory_uri() .'/images/thumbnail.png',
+	            'height' => 70
+	        ),
+	        // (optional) url for large image that will appear in tooltip
+	        'large' => array(
+	            'src' => get_template_directory_uri() .'/images/preview.png',
+	            'height' => 400
+	        ),
+	        // (optional) choice extra data for js, available in custom events
+	        'data' => array(...)
+	    ),}
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-image-picker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

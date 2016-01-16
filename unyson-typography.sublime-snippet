@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'typography',
+    'value' => array(
+        ${2:'family' => 'Arial',
+        'size'   => 12,
+        'style'  => '400',
+        'color'  => '#000000'}
+    ),
+   'components' => array(
+        'family' => ${3:true},
+        'size'   => ${4:true},
+        'color'  => ${5:true}
+    ),
+    'attr'  => array( ${6:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${7:Label}', 'fw'),
+    'desc'  => __('${8:Description}', 'fw'),
+    'help'  => __('${9:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-typography</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type' => 'popup',
+    'value' => array(
+        ${2:'option_1' => 'value 1',
+        'option_2' => 'value 2',}
+    ),
+    'label' => __('${3:Popup}', 'fw'),
+    'desc'  => __('${4:Description}', 'fw'),
+    'popup-title' => __('${5:Popup Title}', 'fw'),
+    'button' => __('${6:Edit}', 'fw'),
+    'popup-title' => ${7:null},
+    'size' => '${8:small}', // small, medium, large
+    'popup-options' => array(
+        
+        ${9:// option here}
+
+    ),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-popup-option</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

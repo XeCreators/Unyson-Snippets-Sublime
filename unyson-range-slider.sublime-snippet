@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'range-slider',
+    'value' => array(
+        'from' => ${2:10},
+        'to'   => ${3:33},
+    ),
+    'properties' => array(
+        ${4:/*
+        'min' => 0,
+        'max' => 100,
+        'step' => 1, // Set slider step. Always > 0. Could be fractional.
+        */}
+    ),
+    'attr'  => array( ${5:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${6:Label}', 'fw'),
+    'desc'  => __('${7:Description}', 'fw'),
+    'help'  => __('${8:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-range-slider</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
