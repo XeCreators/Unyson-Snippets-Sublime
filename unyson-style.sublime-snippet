@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-wp_enqueue_style( 'theme-shortcode-${1:name}', fw_ext('shortcodes')->locate_URI('/shortcodes/${2:shortcode-name}/static/css/${3:styles}.css') );
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>unyson-styles</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.php</scope>
-</snippet>

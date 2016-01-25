@@ -15,7 +15,7 @@
      * Useful when you use the select to populate it dynamically from js
      */
     ${8:// 'no-validate' => false,}
-), // ${1:option_id}
+), ${1:option_id}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>unyson-select</tabTrigger>

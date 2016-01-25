@@ -1,4 +1,4 @@
-# [Unyson](https://wordpress.org/plugins/unyson/) Framework Snippets for Sublime Text
+# [Unyson](https://wordpress.org/plugins/unyson/) Framework Snippet for Sublime Text
 
 Just start typing "unyson-" to have all possible options displayed.
 
