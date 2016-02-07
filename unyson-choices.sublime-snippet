@@ -1,15 +1,9 @@
 <snippet>
 	<content><![CDATA[
-wp_enqueue_script( 
-	'fw-shortcode-${1:name}', 
-	fw_ext('shortcodes')->locate_URI('/shortcodes/${2:name}/static/js/${3:scripts}.js'), 
-	array($4), 
-	'${5:01212016}', 
-	${6:true} 
-);
+'${1:choice}' => __('${2:Title}', 'fw'),
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>unyson-script</tabTrigger>
+	<tabTrigger>unyson-choices</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>
