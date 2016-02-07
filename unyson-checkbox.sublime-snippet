@@ -2,7 +2,7 @@
 	<content><![CDATA[
 '${1:option_id}' => array(
     'type'  => 'checkbox',
-    'value' => ${2:true}, // checked/unchecked
+    'value' => ${2:true}, // checked or unchecked
     'attr'  => array( ${3:'class' => 'custom-class', 'data-foo' => 'bar'} ),
     'label' => __('${4:Label}', 'fw'),
     'desc'  => __('${5:Description}', 'fw'),

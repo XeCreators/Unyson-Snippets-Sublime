@@ -9,13 +9,12 @@
         ${4:// options here}
         
     ), // options
-
     /**
      * When used in Post Options on the first array level
-     * the ``box`` container accepts additional parameters
+     * the ``box`` container accepts additional parameters 
      */
-    ${5://'context' => 'normal|advanced|side',}
-    ${6://'priority' => 'default|high|core|low',}
+    //'context' => '$5', // normal, advanced, side
+    //'priority' => '$6', // default, high, core, low
 ), // ${1:box_id}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

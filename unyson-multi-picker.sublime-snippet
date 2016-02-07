@@ -5,68 +5,39 @@
     'label' => false,
     'desc'  => false,
     'value' => array(
-        ${2:/**
-         * '<custom-key>' => 'default-choice'
-         */
+        ${2:// values here
         'gadget' => 'phone',
-
-        /**
-         * These are the choices and their values,
-         * they are available after option was saved to database
-         */
+        // or
         'laptop' => array(
             'price' => '123',
             'webcam' => false
         ),
-        'phone' => array(
-            'price' => '456',
-            'memory' => '32'
-        )}
+        // ...}
     ),
     'picker' => array(
-        // '<custom-key>' => option
-        '${3:gadget}' => array(
+        '${3:custom-key}' => array(
             'type'    => '${4:select}', // or can be 'short-select' / 'radio' / 'image-picker' / 'switch'.
             'label'   => __('${5:Choose device}', 'fw'),
             'desc'    => __('${6:Description}', 'fw'),
             'help'    => __('${7:Help tip}', 'fw'),
             'choices' => array(
-                ${8:'phone'  => __('Phone', 'fw'),
-                'laptop' => __('Laptop', 'fw')}
+                ${8:// choices here}
             ),
         )
     ), // picker
     'choices' => array(
-        ${9:'phone' => array(
+ 
+        ${9:// option here
+        'phone' => array(
             'price' => array(
                 'type'  => 'text',
                 'label' => __('Price', 'fw'),
             ),
-            'memory' => array(
-                'type'  => 'select',
-                'label' => __('Memory', 'fw'),
-                'choices' => array(
-                    '16' => __('16Gb', 'fw'),
-                    '32' => __('32Gb', 'fw'),
-                    '64' => __('64Gb', 'fw'),
-                )
-            )
         ),
-        'laptop' => array(
-            'price' => array(
-                'type'  => 'text',
-                'label' => __('Price', 'fw'),
-            ),
-            'webcam' => array(
-                'type'  => 'switch',
-                'label' => __('Webcam', 'fw'),
-            )
-        ),}
+        // ...}
+
     ),
-    /**
-     * (optional) if is true, the borders between choice options will be shown
-     */
-    'show_borders' => ${10:false},
+    'show_borders' => ${10:false}, // (optional) if is true, the borders between choice options will be shown
 ), // ${1:option_id}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

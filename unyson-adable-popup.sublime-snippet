@@ -19,7 +19,7 @@
     'sortable' => ${10:true},
     'popup-options' => array(
         
-        ${11:// option here}
+        ${11:// options here}
 
     ),
 ), // ${1:option_id}

@@ -11,7 +11,7 @@ if ( defined('FW') ) {
 	    'fw_framework_customizations_dir_rel_path', 
 	    '_filter_theme_custom_framework_customizations_dir_rel_path'
 	);
-} // defined FW
+} // defined('FW')
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>unyson-folder</tabTrigger>

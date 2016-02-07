@@ -14,7 +14,7 @@
     'size' => '${8:small}', // small, medium, large
     'popup-options' => array(
         
-        ${9:// option here}
+        ${9:// options here}
 
     ),
 ), // ${1:option_id}
