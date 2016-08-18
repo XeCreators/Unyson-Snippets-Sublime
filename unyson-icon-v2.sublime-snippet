@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+'${1:option_id}' => array(
+    'type'  => 'icon-v2', 
+    'preview_size' => '${2:medium}', // small | medium | large | sauron
+    'modal_size' => '${3:medium}', // small | medium | large
+
+    /**
+     * There's no point in configuring value from code here.
+     *
+     * I'll document the result you get in the frontend here:
+     * 'value' => array(
+     *   'type' => 'icon-font', // icon-font | custom-upload
+     *
+     *   // ONLY IF icon-font
+     *   'icon-class' => '',
+     *   'icon-class-without-root' => false,
+     *   'pack-name' => false,
+     *   'pack-css-uri' => false
+     *
+     *   // ONLY IF custom-upload
+     *   // 'attachment-id' => false,
+     *   // 'url' => false
+     * ),
+     */
+
+    'attr'  => array( ${4:'class' => 'custom-class', 'data-foo' => 'bar'} ),
+    'label' => __('${5:Label}', 'fw'),
+    'desc'  => __('${6:Description}', 'fw'),
+    'help'  => __('${7:Help tip}', 'fw'),
+), // ${1:option_id}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unyson-icon-v2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
