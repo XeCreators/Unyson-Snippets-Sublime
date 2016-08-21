@@ -1,6 +1,5 @@
 <snippet>
 	<content><![CDATA[
-Hello, ${1:this} is a ${2:snippet}.
 '${1:option_id}' => array(
     'type'  => 'textarea',
     'value' => '${2:default value}',
